@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey - FriendFinder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+    <!-- newest jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kalam|Roboto|Rock+Salt" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+
+
+</head>
+<body>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="assets/friends-top.jpg"></div>
+        <p id="banner-title">FriendFinder</p>
+    </div>
+    <div class="section white">
+        <div class="row container center-align">
+            <h2 class="header main-tag">Your new <b><i>SFF</i></b> (that's <b><i>SoulFriend</i></b>&reg;<i>Forever</i>) is just a few questions away...</h2>
+            <hr>
+        </div>
+
+        <div class="row container center-align">
+            <div class="input-field col s12">
+                <p class="quest-text left-align">#1: You find comfort in the saying "Live. Laugh. Love."</p>
+                <select class="icons" id="q1">
+                    <option value="" disabled selected>Select your answer...</option>
+                    <option value="5" data-icon="assets/5.png" class="left circle">Completely Agree</option>
+                    <option value="4" data-icon="assets/4.png" class="left circle">Somewhat Agree</option>
+                    <option value="3" data-icon="assets/3.png" class="left circle">Neutral</option>
+                    <option value="2" data-icon="assets/2.png" class="left circle">Somewhat Disagree</option>
+                    <option value="1" data-icon="assets/1.png" class="left circle">Completely Disagree</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row container center-align">
+            <div class="input-field col s12">
+                <p class="quest-text left-align">#2: If people have different views than me, I don't want them to be around me and they should leave.</p>
+                <select class="icons" id="q2">
+                    <option value="" disabled selected>Select your answer...</option>
+                    <option value="5" data-icon="assets/5.png" class="left circle">Completely Agree</option>
+                    <option value="4" data-icon="assets/4.png" class="left circle">Somewhat Agree</option>
+                    <option value="3" data-icon="assets/3.png" class="left circle">Neutral</option>
+                    <option value="2" data-icon="assets/2.png" class="left circle">Somewhat Disagree</option>
+                    <option value="1" data-icon="assets/1.png" class="left circle">Completely Disagree</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row container center-align">
+            <div class="input-field col s12">
+                <p class="quest-text left-align">#3: The Alt-Right is all right with me.</p>
+                <select class="icons" id="q3">
+                    <option value="" disabled selected>Select your answer...</option>
+                    <option value="5" data-icon="assets/5.png" class="left circle">Completely Agree</option>
+                    <option value="4" data-icon="assets/4.png" class="left circle">Somewhat Agree</option>
+                    <option value="3" data-icon="assets/3.png" class="left circle">Neutral</option>
+                    <option value="2" data-icon="assets/2.png" class="left circle">Somewhat Disagree</option>
+                    <option value="1" data-icon="assets/1.png" class="left circle">Completely Disagree</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row container center-align">
+            <div class="input-field col s12">
+                <p class="quest-text left-align">#4: A hot dog (with bun) is technically a sandwich.</p>
+                <select class="icons" id="q4">
+                    <option value="" disabled selected>Select your answer...</option>
+                    <option value="5" data-icon="assets/5.png" class="left circle">Completely Agree</option>
+                    <option value="4" data-icon="assets/4.png" class="left circle">Somewhat Agree</option>
+                    <option value="3" data-icon="assets/3.png" class="left circle">Neutral</option>
+                    <option value="2" data-icon="assets/2.png" class="left circle">Somewhat Disagree</option>
+                    <option value="1" data-icon="assets/1.png" class="left circle">Completely Disagree</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row container center-align">
+            <div class="input-field col s12">
+                <p class="quest-text left-align">#5: There is nothing wrong with the 2-party political system in U.S. politics.</p>
+                <select class="icons" id="q5">
+                    <option value="" disabled selected>Select your answer...</option>
+                    <option value="5" data-icon="assets/5.png" class="left circle">Completely Agree</option>
+                    <option value="4" data-icon="assets/4.png" class="left circle">Somewhat Agree</option>
+                    <option value="3" data-icon="assets/3.png" class="left circle">Neutral</option>
+                    <option value="2" data-icon="assets/2.png" class="left circle">Somewhat Disagree</option>
+                    <option value="1" data-icon="assets/1.png" class="left circle">Completely Disagree</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row container center-align">
+            <div class="input-field col s12">
+                <p class="quest-text left-align">#6: My dream vacation is glamping at Coachella.</p>
+                <select class="icons" id="q6">
+                    <option value="" disabled selected>Select your answer...</option>
+                    <option value="5" data-icon="assets/5.png" class="left circle">Completely Agree</option>
+                    <option value="4" data-icon="assets/4.png" class="left circle">Somewhat Agree</option>
+                    <option value="3" data-icon="assets/3.png" class="left circle">Neutral</option>
+                    <option value="2" data-icon="assets/2.png" class="left circle">Somewhat Disagree</option>
+                    <option value="1" data-icon="assets/1.png" class="left circle">Completely Disagree</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row container center-align">
+            <div class="input-field col s12">
+                <p class="quest-text left-align">#7: I have more friends of the opposite sex than I do of my own sex.</p>
+                <select class="icons" id="q7">
+                    <option value="" disabled selected>Select your answer...</option>
+                    <option value="5" data-icon="assets/5.png" class="left circle">Completely Agree</option>
+                    <option value="4" data-icon="assets/4.png" class="left circle">Somewhat Agree</option>
+                    <option value="3" data-icon="assets/3.png" class="left circle">Neutral</option>
+                    <option value="2" data-icon="assets/2.png" class="left circle">Somewhat Disagree</option>
+                    <option value="1" data-icon="assets/1.png" class="left circle">Completely Disagree</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row container center-align">
+            <div class="input-field col s12">
+                <p class="quest-text left-align">#8: There is a direct correlation between how intelligent someone is and how many cats they have (i.e. more cats = smarter).</p>
+                <select class="icons" id="q8">
+                    <option value="" disabled selected>Select your answer...</option>
+                    <option value="5" data-icon="assets/5.png" class="left circle">Completely Agree</option>
+                    <option value="4" data-icon="assets/4.png" class="left circle">Somewhat Agree</option>
+                    <option value="3" data-icon="assets/3.png" class="left circle">Neutral</option>
+                    <option value="2" data-icon="assets/2.png" class="left circle">Somewhat Disagree</option>
+                    <option value="1" data-icon="assets/1.png" class="left circle">Completely Disagree</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row container center-align">
+            <div class="input-field col s12">
+                <p class="quest-text left-align">#9: I hate kids.</p>
+                <select class="icons" id="q9">
+                    <option value="" disabled selected>Select your answer...</option>
+                    <option value="5" data-icon="assets/5.png" class="left circle">Completely Agree</option>
+                    <option value="4" data-icon="assets/4.png" class="left circle">Somewhat Agree</option>
+                    <option value="3" data-icon="assets/3.png" class="left circle">Neutral</option>
+                    <option value="2" data-icon="assets/2.png" class="left circle">Somewhat Disagree</option>
+                    <option value="1" data-icon="assets/1.png" class="left circle">Completely Disagree</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row container center-align">
+            <div class="input-field col s12">
+                <p class="quest-text left-align">#10: I'd rather have a friend tell me the truth than protect my feelings.</p>
+                <select class="icons" id="q10">
+                    <option value="" disabled selected>Select your answer...</option>
+                    <option value="5" data-icon="assets/5.png" class="left circle">Completely Agree</option>
+                    <option value="4" data-icon="assets/4.png" class="left circle">Somewhat Agree</option>
+                    <option value="3" data-icon="assets/3.png" class="left circle">Neutral</option>
+                    <option value="2" data-icon="assets/2.png" class="left circle">Somewhat Disagree</option>
+                    <option value="1" data-icon="assets/1.png" class="left circle">Completely Disagree</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row container center-align">
+            <a class="waves-effect waves-light btn-large light-blue darken-4"><i class="material-icons left">location_searching</i>Find your SoulFriend&reg;!</a>
+        </div>
+
+    </div>
+    <div class="parallax-container">
+        <div class="parallax"><img src="assets/friends.jpg"></div>
+    </div>
+ 
+    <footer class="page-footer light-blue darken-4">
+        <div class="container center-align ">
+            © 2017 Denis Molloy
+        </div>
+    </footer>
+    <script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>

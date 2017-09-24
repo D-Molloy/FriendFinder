@@ -1,0 +1,65 @@
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Patrick Hand SC', cursive; */
+.parallax-container {
+    height: 400px;
+}
+#banner-title {
+    text-align: center;
+    margin-top: 10%;
+    font-family: 'Rock Salt', cursive;
+    font-size: 6em;
+    color: darkblue;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #FFFFFF;
+}
+
+.main-tag {
+    font-family: 'Kalam', cursive;
+    font-size: 50px;
+}
+
+.prom-banner-title {
+    font-family: 'Kalam', cursive;
+    margin: 20px;
+    font-size: 40px;
+}
+
+.main-body {
+    font-size: 20px;
+}
+
+.promise-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.promise-div {
+    width: 30%;
+    margin: 10px 20px;
+}
+
+.promise-title {
+    font-family: 'Kalam', cursive;
+    font-size: 30px;
+}
+
+.promise-title,
+.promise-tag {
+    margin: 0;
+}
+.prom-img {
+    width:100%;
+}
+
+/*
+
+Survey Page
+
+*/
+
+.quest-text {
+    font-size: 30px;
+}
