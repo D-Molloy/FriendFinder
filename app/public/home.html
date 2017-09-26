@@ -11,13 +11,15 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kalam|Roboto|Rock+Salt" rel="stylesheet">
 
+    <link type="text/css" rel="stylesheet" href="/css/style.css"/>
+
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
-    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <!-- <link type="text/css" rel="stylesheet" href="css/style.css"/> -->
 
 
 </head>
@@ -31,18 +33,14 @@
     </div>
     <div class="section white center-align">
         <div class="row container ">
-            <h2 class="header main-tag">Why shouldn't friendship be easy?</h2>
-            <p class="grey-text text-darken-3 lighten-3 main-body">In today's "blink-and-it's-viral" world, literally nobody has time to meet people they are compatible with, let alone trust.  That's why we created <b>FriendFinder</b>!  In 10 easy questions, our advanced algorithms engineered by one developer in a coding boot camp will instantly match with your <b><i>SoulFriend</i></b>&reg;!</p>
-            
+            <h2 class="header main-tag">Why shouldn't friendships be easy?</h2>
+            <p class="grey-text text-darken-3 lighten-3 main-body">In today's "blink-and-it's-viral" world, literally nobody has time to meet people they are compatible with, let alone trust.  That's why we created <b>FriendFinder</b>!  In 10 easy questions, our advanced algorithm engineered by one developer at a coding boot camp will instantly match with your <b><i>SoulFriend</i></b>&reg;!</p>
             <hr>
-        
         </div>
-
 
         <p class="prom-banner-title">Goodbye drama...hello, positive affirmation!</p>
 
-        <div class="row center-align promise-container">
-            
+        <div class="row center-align promise-container">  
             <div class="promise-div z-depth-5">
                 <p class="promise-title">No funny business!</p>
                 <p class="promise-tag">You won't like each other like 'that'.</p>
@@ -58,17 +56,18 @@
                 <p class="promise-tag">You'll always need their non-romantic love.</p>
                 <img class="prom-img" src="assets/friends3.png" alt="No funny business">
             </div>
-
         </div>
+        
         <div class="row container center-align">
             <hr>       
             <p class="prom-banner-title">What are you waiting for?!</p>
             <p class="main-body">With the <b>FriendFinder</b> <b><i>SoulFriend</i></b>&reg; 100% guarantee, you have nothing to lose or be accountable for!  Go ahead...<br>be the powerful, independent, quirky soul you always say you are ;-)</p>
-            <a class="waves-effect waves-light btn-large light-blue darken-4"><i class="material-icons left">favorite</i>Get Started!</a>
+            <a href="/survey"><button class="waves-effect waves-light btn-large light-blue darken-4" id="to-survey" type="submit" name="get-started"><i class="material-icons left">favorite</i>Get Started!</button></a>
         </div>
+
         <div class="row container center-align">
-                <a class="blue-text text-lighten-3" href="#!">API Friends List</a>  <span class="blue-text text-lighten-3">  |  </span>
-                <a class="blue-text text-lighten-3" href="#!">GitHub Repo</a>
+                <a class="blue-text text-lighten-3" href="/api/friends">API Friends List</a>  <span class="blue-text text-lighten-3">  |  </span>
+                <a class="blue-text text-lighten-3" href="https://github.com/D-Molloy/FriendFinder" target="_blank">GitHub Repo</a>
         </div>
     </div>
     <div class="parallax-container">
@@ -81,7 +80,13 @@
             © 2017 Denis Molloy
         </div>
     </footer>
-    <script type="text/javascript" src="app.js"></script>
+    <!-- <script type="text/javascript" src="app.js"></script> -->
+    <script type="text/javascript" >
+        $(document).ready(function(){
+            $('.parallax').parallax();
+            $('select').material_select();
+        });
+    </script>
 
 </body>
 </html>

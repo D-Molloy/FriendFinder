@@ -1,4 +1,4 @@
-$(document).ready(function(){
-    $('.parallax').parallax();
-    $('select').material_select();
-});
+// $(document).ready(function(){
+//     $('.parallax').parallax();
+//     $('select').material_select();
+// });
