@@ -226,6 +226,7 @@
     </footer>
     <!-- start survey javascript -->
     <script type="text/javascript">
+
         // load materialize component js
         $(document).ready(function () {
             $('.parallax').parallax();
@@ -309,17 +310,19 @@
                         $('.modal-button').attr("href", "/survey");
                         //show the modal
                         $('#modal1').modal('open');
+                        //call the function that posts the users data
+                        postData();
                     })
-                //post the user's data to friends.js so they will appear in future results
-                $.post(currentURL + "/api/friends", userData);
-                
+                //function posts the user's data to friends.js so they will appear in future results
+                function postData(){
+                    $.post(currentURL + "/api/friends", userData);
+                }
                 //clear the questionairre fields
                 var select = $('select');
                 $("form input").val("");
                 select.prop('selectedIndex', 0);
                 select.material_select();
                 $('#user-name').val("");
-
             } else {
                 //if the user didn't enter all the data, pop a modal informing them they have to enter all request information
                 $('.modal-title').text("Silly Goose!")
@@ -328,6 +331,7 @@
                 $('#modal1').modal('open');
             }
         })
+
     </script>
 </body>
 
