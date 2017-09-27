@@ -1,22 +1,6 @@
 //friends.js stores the following seed data in friends array.  When users complete the survey, their information will be stored appended to the bottom of the array.
 var friendsArray = [
     {
-        "name": "Debbie Downer",
-        "photo": "https://media2.s-nbcnews.com/i/MSNBC/Components/Video/__NEW/tdy_tren_downer_131001.jpg",
-        "scores": [
-        "3",
-        "3",
-        "3",
-        "3",
-        "3",
-        "3",
-        "3",
-        "3",
-        "3",
-        "3"
-        ]
-    },
-    {
         "name": "Kimmy Schmidt",
         "photo": "https://images.hellogiggles.com/uploads/2017/01/12054107/GettyImages-631497168-700x525.jpg",
         "scores": [
