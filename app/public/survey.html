@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Survey - FriendFinder</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="img/png" href="assets/favicon.png">
     <!-- newest jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+    <!-- import Google Icons & Fonts -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Kalam|Roboto|Rock+Salt" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi|Raleway" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-  
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-
-    <link type="text/css" rel="stylesheet" href="css/style.css"/>
-
-
+    <!-- load the custom stylesheet -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
 </head>
-<body>
 
+<body>
+    <!-- Top parallax -->
     <div class="parallax-container">
         <div class="parallax"><img src="assets/friends-top.jpg"></div>
         <p id="banner-title">FriendFinder</p>
@@ -32,29 +32,30 @@
             <hr>
         </div>
 
-        
 
+        <!-- start of questionaire -->
         <form class="col s12">
-                <div class="row container">
-                        <h5>Enter some info about yourself:</h5>
-                  <div class="input-field col s6">
+            <div class="row container">
+                <h5>Enter some info about yourself:</h5>
+                <div class="input-field col s12">
                     <input placeholder="Pat Person" id="user-name" type="text" class="validate form-control" required="">
                     <label for="user-name" data-error="Please Enter Your Name" data-success="Name Entered">Your Name</label>
-                  </div>
                 </div>
-                <div class="row container">
-                    <div class="input-field col s6">
-                        <input placeholder="Right-click on image > select 'Copy Image Address' > paste link here." id="user-url" type="text" class="validate form-control" required="">
-                        <label for="user-url" data-error="Please Enter A Link To Your Picture" data-success="Link Entered">Paste a link to your picture</label>
-                    </div>
+            </div>
+            <div class="row container">
+                <div class="input-field col s12">
+                    <input placeholder="Right-click on image > select 'Copy Image Address' > paste link here." id="user-url" type="text" class="validate form-control"
+                        required="">
+                    <label for="user-url" data-error="Please Enter A Link To Your Picture" data-success="Link Entered">Paste a link to your picture</label>
                 </div>
+            </div>
         </form>
 
-
-        <div class="row container center-align">
+        <!-- start of questions -->
+        <div class="row container ">
             <div class="input-field col s12">
                 <p class="quest-text left-align">#1: I find comfort in the saying "Live. Laugh. Love."</p>
-                <select class="icons" id="q1">
+                <select class="icons survey-quest" id="q1">
                     <option value="" disabled selected>Select your answer...</option>
                     <option value="5" data-icon="assets/5.png" class="left circle">Completely Agree</option>
                     <option value="4" data-icon="assets/4.png" class="left circle">Somewhat Agree</option>
@@ -65,10 +66,10 @@
             </div>
         </div>
 
-        <div class="row container center-align">
+        <div class="row container ">
             <div class="input-field col s12">
                 <p class="quest-text left-align">#2: If people have different views than me, I don't want them to be around me and they should leave.</p>
-                <select class="icons" id="q2">
+                <select class="icons survey-quest" id="q2">
                     <option value="" disabled selected>Select your answer...</option>
                     <option value="5" data-icon="assets/5.png" class="left circle">Completely Agree</option>
                     <option value="4" data-icon="assets/4.png" class="left circle">Somewhat Agree</option>
@@ -79,10 +80,10 @@
             </div>
         </div>
 
-        <div class="row container center-align">
+        <div class="row container ">
             <div class="input-field col s12">
                 <p class="quest-text left-align">#3: The Alt-Right is all right with me.</p>
-                <select class="icons" id="q3">
+                <select class="icons survey-quest" id="q3">
                     <option value="" disabled selected>Select your answer...</option>
                     <option value="5" data-icon="assets/5.png" class="left circle">Completely Agree</option>
                     <option value="4" data-icon="assets/4.png" class="left circle">Somewhat Agree</option>
@@ -93,10 +94,10 @@
             </div>
         </div>
 
-        <div class="row container center-align">
+        <div class="row container ">
             <div class="input-field col s12">
                 <p class="quest-text left-align">#4: A hot dog (with bun) is technically a sandwich.</p>
-                <select class="icons" id="q4">
+                <select class="icons survey-quest" id="q4">
                     <option value="" disabled selected>Select your answer...</option>
                     <option value="5" data-icon="assets/5.png" class="left circle">Completely Agree</option>
                     <option value="4" data-icon="assets/4.png" class="left circle">Somewhat Agree</option>
@@ -107,10 +108,10 @@
             </div>
         </div>
 
-        <div class="row container center-align">
+        <div class="row container ">
             <div class="input-field col s12">
-                <p class="quest-text left-align">#5: There is nothing wrong with the 2-party political system in U.S. politics.</p>
-                <select class="icons" id="q5">
+                <p class="quest-text left-align">#5: The two-party political system in U.S. politics is working well.</p>
+                <select class="icons survey-quest" id="q5">
                     <option value="" disabled selected>Select your answer...</option>
                     <option value="5" data-icon="assets/5.png" class="left circle">Completely Agree</option>
                     <option value="4" data-icon="assets/4.png" class="left circle">Somewhat Agree</option>
@@ -121,10 +122,10 @@
             </div>
         </div>
 
-        <div class="row container center-align">
+        <div class="row container ">
             <div class="input-field col s12">
-                <p class="quest-text left-align">#6: My dream vacation is glamping at Coachella.</p>
-                <select class="icons" id="q6">
+                <p class="quest-text left-align">#6: A dream vacation would be glamping at Coachella.</p>
+                <select class="icons survey-quest" id="q6">
                     <option value="" disabled selected>Select your answer...</option>
                     <option value="5" data-icon="assets/5.png" class="left circle">Completely Agree</option>
                     <option value="4" data-icon="assets/4.png" class="left circle">Somewhat Agree</option>
@@ -135,10 +136,10 @@
             </div>
         </div>
 
-        <div class="row container center-align">
+        <div class="row container ">
             <div class="input-field col s12">
-                <p class="quest-text left-align">#7: I have more friends of the opposite sex than I do of my own sex.</p>
-                <select class="icons" id="q7">
+                <p class="quest-text left-align">#7: I have more friends of the opposite sex than I do of my own.</p>
+                <select class="icons survey-quest" id="q7">
                     <option value="" disabled selected>Select your answer...</option>
                     <option value="5" data-icon="assets/5.png" class="left circle">Completely Agree</option>
                     <option value="4" data-icon="assets/4.png" class="left circle">Somewhat Agree</option>
@@ -149,10 +150,10 @@
             </div>
         </div>
 
-        <div class="row container center-align">
+        <div class="row container ">
             <div class="input-field col s12">
                 <p class="quest-text left-align">#8: There is nothing like a good cuddle.</p>
-                <select class="icons" id="q8">
+                <select class="icons survey-quest" id="q8">
                     <option value="" disabled selected>Select your answer...</option>
                     <option value="5" data-icon="assets/5.png" class="left circle">Completely Agree</option>
                     <option value="4" data-icon="assets/4.png" class="left circle">Somewhat Agree</option>
@@ -163,10 +164,10 @@
             </div>
         </div>
 
-        <div class="row container center-align">
+        <div class="row container ">
             <div class="input-field col s12">
-                <p class="quest-text left-align">#9: I hate kids.</p>
-                <select class="icons" id="q9">
+                <p class="quest-text left-align">#9: I don't like kids.</p>
+                <select class="icons survey-quest" id="q9">
                     <option value="" disabled selected>Select your answer...</option>
                     <option value="5" data-icon="assets/5.png" class="left circle">Completely Agree</option>
                     <option value="4" data-icon="assets/4.png" class="left circle">Somewhat Agree</option>
@@ -177,10 +178,10 @@
             </div>
         </div>
 
-        <div class="row container center-align">
+        <div class="row container ">
             <div class="input-field col s12">
                 <p class="quest-text left-align">#10: I'd rather have a friend tell me the truth than protect my feelings.</p>
-                <select class="icons" id="q10">
+                <select class="icons survey-quest" id="q10">
                     <option value=""  selected>Select your answer...</option>
                     <option value="5" data-icon="assets/5.png" class="left circle">Completely Agree</option>
                     <option value="4" data-icon="assets/4.png" class="left circle">Somewhat Agree</option>
@@ -190,147 +191,144 @@
                 </select>
             </div>
         </div>
-
+        <!-- end of questions -->
+        <!-- Search button and links -->
         <div class="row container center-align">
-            <button class="waves-effect waves-light btn-large light-blue darken-4" type="submit" name="get-started" id="submit"><i class="material-icons left">location_searching</i>Find your SoulFriend&reg;!</button>
+            <button class="waves-effect waves-light btn-large light-blue darken-4 hoverable" type="submit" name="get-started" id="submit"><i class="material-icons left">location_searching</i>Find your SoulFriend&reg;!</button>
         </div>
         <div class="row container center-align">
-            <a class="blue-text text-lighten-3" href="/api/friends">API Friends List</a>  <span class="blue-text text-lighten-3">  |  </span>
+            <a class="blue-text text-lighten-3" href="/api/friends" target="_blank">API Friends List</a> <span class="blue-text text-lighten-3">  |  </span>
             <a class="blue-text text-lighten-3" href="/">Home</a>
-         </div>
-
+        </div>
     </div>
+    <!-- bottom parallax -->
     <div class="parallax-container">
         <div class="parallax"><img src="assets/friends.jpg"></div>
     </div>
-
-<!-- add modal  -->
- 
+    <!-- Modal  -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4 class="modal-title center-align"></h4>
+            <p class="modal-name center-align"></p>
+            <div class="img-div center-align">
+                <img class="modal-image" src="" />
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="/survey" class="modal-button modal-action modal-close waves-effect waves-green btn-flat">Cool!</a>
+        </div>
+    </div>
+    <!-- footer  -->
     <footer class="page-footer light-blue darken-4">
         <div class="container center-align ">
             © 2017 Denis Molloy
         </div>
     </footer>
-    <script type="text/javascript" src="app.js"></script>
+    <!-- start survey javascript -->
     <script type="text/javascript">
-// 6. Determine the user's most compatible friend using the following as a guide:
-
-//    * Convert each user's results into a simple array of numbers (ex: `[5, 1, 4, 4, 5, 1, 2, 5, 4, 1]`).
-//    * With that done, compare the difference between current user's scores against those from other users, question by question. Add up the differences to calculate the `totalDifference`.
-//      * Example: 
-//        * User 1: `[5, 1, 4, 4, 5, 1, 2, 5, 4, 1]`
-//        * User 2: `[3, 2, 6, 4, 5, 1, 2, 5, 4, 1]`
-//        * Total Difference: **2 + 1 + 2 =** **_5_**
-//    * Remember to use the absolute value of the differences. Put another way: no negative solutions! Your app should calculate both `5-3` and `3-5` as `2`, and so on. 
-//    * The closest match will be the user with the least amount of difference.
-
-// 7. Once you've found the current user's most compatible friend, display the result as a modal pop-up.
-//    * The modal should display both the name and picture of the closest match. 
-
-        $(document).ready(function(){
+        // load materialize component js
+        $(document).ready(function () {
             $('.parallax').parallax();
             $('select').material_select();
+            $('.modal').modal();
         });
-
-        $('#submit').on("click", function(){
+        //click handler for the button
+        $('#submit').on("click", function () {
+            //this function ensures that values were inputted (name/link/questions)
             function validateForm() {
-            var isValid = true;
-            $('.form-control').each(function() {
-                if ( $(this).val() === '' )
-                    isValid = false;
-            });
-
-            $('.chosen-select').each(function() {
-
-                if( $(this).val() === "")
+                var isValid = true;
+                $('.form-control').each(function () {
+                    if ($(this).val() === '')
+                        isValid = false;
+                });
+                if ($('#q1').val() === null ||
+                    $("#q2").val() === null ||
+                    $("#q3").val() === null ||
+                    $("#q4").val() === null ||
+                    $("#q5").val() === null ||
+                    $("#q6").val() === null ||
+                    $("#q7").val() === null ||
+                    $("#q8").val() === null ||
+                    $("#q9").val() === null ||
+                    $("#q10").val() === null) {
                     isValid = false
-            })
-            return isValid;
+                }
+                return isValid;
             }
 
-
-            
+            //if all forms were inputted then run this code
             if (validateForm() == true) {
+                //create the userData object and store all inputted values
                 var userData = {
                     name: $('#user-name').val().trim(),
                     photo: $('#user-url').val().trim(),
                     scores: [$('#q1').val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()]
                 }
 
-
-                var currentURL = window.location.origin;
-
                 //save current user score array into a variable
                 var newUserScoreArr = userData.scores;
-
-                
-
+                // create an array that will be used to store the total difference between newUserScoreArr and the objects in the array in friend.js
                 var friendDiffArr = [];
-
-                $.ajax({url: currentURL + "/api/friends", method: "GET"})
-                    .done(function(friendsData){
-                    console.log("friendsData:" + friendsData)
-                    
-                    
-                    for (var i = 0; i < friendsData.length; i++) {
-                        var currDiffArr = [];
-                        var indexTally = 0;
-                        for(var j = 0; j < 10; j++){
-                            var compareIndex = parseInt(friendsData[i].scores[j]);
-                            console.log("compareIndex: " + compareIndex);
-                            var userIndex = parseInt(newUserScoreArr[j]);
-                            console.log("userIndex: " + userIndex);
-                            var indexDiff = Math.abs(compareIndex - userIndex);
-                            console.log("indexDiff: " + indexDiff);
-                            currDiffArr.push(indexDiff);
-                            console.log("Curr diff array: "+currDiffArr);
+                //store the current URL into a variable
+                var currentURL = window.location.origin;
+                //make an AJAX call to get the friendsData stored in friends.js
+                $.ajax({ url: currentURL + "/api/friends", method: "GET" })
+                    .done(function (friendsData) {
+                        //this for loop goes into each object in the array in friends.js
+                        for (var i = 0; i < friendsData.length; i++) {
+                            var currDiffArr = [];
+                            var indexTally = 0;
+                            //then go into each objects scores property and compare each score to the user inputted scores
+                            for (var j = 0; j < 10; j++) {
+                                //convert the string numbers into integers
+                                var compareIndex = parseInt(friendsData[i].scores[j]);
+                                var userIndex = parseInt(newUserScoreArr[j]);
+                                //find the absolute difference betweeen the user's score for the current question and the current objects score
+                                var indexDiff = Math.abs(compareIndex - userIndex);
+                                //push that difference into an array
+                                currDiffArr.push(indexDiff);
+                            }
+                            //add up all the indexDiffs
+                            for (var k = 0; k < currDiffArr.length; k++) {
+                                indexTally += currDiffArr[k];
+                            }
+                            //store the total difference between the users score and the current objects score in an array
+                            friendDiffArr.push(indexTally);
                         }
-                        for (var k = 0; k < currDiffArr.length; k++){
-                            indexTally += currDiffArr[k];
-                        }
-                        friendDiffArr.push(indexTally);
-                        console.log("friendDiffArr: "+friendDiffArr);
-                    }
-                    //find the smallest value in friend diff arr and that is the best match
-                    //friendsData[smallestvalue in diffarr] name and pic
-                })
-                
-                
-                //GET request to get friends data -> store in variable
-                //data[i] to get first person data[i].scores
-                //data[i].scores[i] - userData.scores[i] (absolute value)
-                //store value in a new array
-                //total up array and assign 'total' to another array
+                        //find the index of the lowest sccore in the friendDiffArr.  The lowest score is most similar to the user
+                        var friendIndex = friendDiffArr.indexOf(Math.min(...friendDiffArr));
+                        //store the new friends name in a variable
+                        var newFriendName = friendsData[friendIndex].name;
+                        //store the new friends image link in a variable
+                        var newFriendPhoto = friendsData[friendIndex].photo;
 
-                //once all friends have been iterated through, compare the differences for each index, smallest difference is the match
-                $.post(currentURL + "/api/friends", userData)
-                .done(function(data){
-                    console.log(data);
-                    alert("You've been added to the database!");
-                })
+                        //populate the modal
+                        $('.modal-title').html("Meet Your New SouldFriend&reg;!")
+                        $('.modal-name').text(newFriendName);
+                        $('.modal-image').attr("src", newFriendPhoto);
+                        $('.modal-button').attr("href", "/survey");
+                        //show the modal
+                        $('#modal1').modal('open');
+                    })
+                //post the user's data to friends.js so they will appear in future results
+                $.post(currentURL + "/api/friends", userData);
+                
+                //clear the questionairre fields
+                var select = $('select');
+                $("form input").val("");
+                select.prop('selectedIndex', 0);
+                select.material_select();
+                $('#user-name').val("");
 
             } else {
-                alert("Silly Goose!  Please enter all the information to get your new SoulFriend!")
+                //if the user didn't enter all the data, pop a modal informing them they have to enter all request information
+                $('.modal-title').text("Silly Goose!")
+                $('.modal-name').html("Answer all questions to get your new SoulFriend&reg;!");
+                $('.modal-button').attr("href", "#!");
+                $('#modal1').modal('open');
             }
-
-
-
-            // if (typeof userData ==='object'){
-            //     console.log("This is an object: "+ userData);
-            // } else {
-            //     console.log("userData is not an object");
-            // }
-            
-
-            //reset form
-            var select = $('select');
-            $("form input").val("");
-            select.prop('selectedIndex', 0); //Sets the first option as selected
-            select.material_select();        //Update material select
-            $('#user-name').val("");
-
         })
     </script>
-
 </body>
+
 </html>

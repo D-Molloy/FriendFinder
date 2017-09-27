@@ -1,20 +1,16 @@
-// 4. Your `apiRoutes.js` file should contain two routes:
-
-//    * A GET route with the url `/api/friends`. This will be used to display a JSON of all possible friends.
-//    * A POST routes `/api/friends`. This will be used to handle incoming survey results. This route will also be used to handle the compatibility logic. 
+// Dependencies
+// =============================================================
 var friendsArray = require("../data/friends.js");
 
-
+//apiRoutes.jss exports the following routes to servver
 module.exports = function(app) {
+    //this route gets the data stored in friends.js
     app.get("/api/friends", function(req, res) {
         res.json(friendsArray);
     });
-
+    //this route allows for data to be posted to friends.js
     app.post("/api/friends", function(req, res) {
-
         friendsArray.push(req.body);
-
         res.json(true);
     });
-
 }
