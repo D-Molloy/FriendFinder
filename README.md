@@ -14,6 +14,6 @@ Key Files:
 Technologies used:
 * HTML
 * Javascript
-* CSS (Materialize framework and acustom stylesheet)
+* CSS (Materialize framework and a custom stylesheet)
 * Node.js
 * Express.js
