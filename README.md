@@ -17,4 +17,4 @@ Technologies used:
 * CSS (Materialize framework and a custom stylesheet)
 * Node.js
 * Express.js
-* MySQL
+
